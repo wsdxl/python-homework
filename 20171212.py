@@ -5,53 +5,42 @@
 写一个程序检测输入的数是否是阿姆斯特朗数
 '''
 
-# # 获取用户输入的数字
-# num = int(input("请输入一个数字: "))
+# 获取用户输入的数字
+num = int(input("请输入一个数字: "))
 
-# # 初始化变量 sum
-# sum = 0
-# # 指数
-# n = len(str(num))
+# 初始化变量 sum
+sum = 0
+# 指数
+n = len(str(num))
 
-# # 检测
-# temp = num
-# while temp > 0:
-#    digit = temp % 10
-#    sum += digit ** n
-#    temp //= 10
+# 检测
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** n
+   temp //= 10
 
-# # 输出结果
-# if num == sum:
-#    print(num,"是阿姆斯特朗数")
-# else:
-#    print(num,"不是阿姆斯特朗数")
+# 输出结果
+if num == sum:
+   print(num,"是阿姆斯特朗数")
+else:
+   print(num,"不是阿姆斯特朗数")
 
-# # 获取指定期间内的阿姆斯特朗数
-# lower = int(input('最小值：'))
-# upper = int(input('最大值：'))
-# for num in range(lower, upper + 1):
-#     sum = 0
-#     n = len(str(num))
-#     temp = num
-#     while temp > 0:
-#         digit = temp % 10
-#         sum+=digit**n
-#         temp//=10
-#     if num==sum:
-#         print(num)
+# 获取指定期间内的阿姆斯特朗数
+lower = int(input('最小值：'))
+upper = int(input('最大值：'))
+for num in range(lower, upper + 1):
+    sum = 0
+    n = len(str(num))
+    temp = num
+    while temp > 0:
+        digit = temp % 10
+        sum+=digit**n
+        temp//=10
+    if num==sum:
+        print(num)
 
-# lists = [1,20,13,16,5,18]
-# def bubble_sort(lists):
-#     # 冒泡排序
-#     n = len(lists)
-#     for i in range(0, n):
-#         for j in range(i + 1, n):
-#             if lists[i] > lists[j]:
-#                 lists[i], lists[j] = lists[j], lists[i]
-#     return lists
 
-# s=bubble_sort(lists)
-# print(s)
 
 ###############################################################################################
 
