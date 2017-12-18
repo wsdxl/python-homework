@@ -86,5 +86,28 @@ dict = {'Name': 'John', 'Age': 7, 'Class': 'First'}
 # print(b)
 # dict.pop('Name')
 # print(dict)
-dict.popitem()
-print(dict)
+# dict.popitem()
+# print(dict)
+
+# '''
+# 输入一个正整数，判断这个数的阶乘是多少
+# '''
+# num=int(input('Please enter a number:'))
+# s=1
+# if num<0:
+#     print('负数没有阶乘')
+# elif num==0:
+#     print('%d的阶乘是'% num)
+# else:
+#     for i in range(1,num+1):
+#         s*=i
+# print('%d的阶乘是%d'%(num,s))
+
+def add(x,y):
+    print(x+y)
+    return x+y
+add(3,4)
+    
+
+
+
