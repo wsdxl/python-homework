@@ -32,36 +32,30 @@
 # print (quadratic_equation(1, -6, 5))
 # print (quadratic_equation(0, 2, 3))
 
-num=int(input('Please enter a number:'))
-n1,n2=0,1
-list=[n1,n2]
-while True:
-    nth=n1+n2
-    if nth>num:
-        break
-    n1=n2
-    n2=nth
-    list.append(nth)
-print(list)
-
 # num=int(input('Please enter a number:'))
 # n1,n2=0,1
 # list=[n1,n2]
-# nth=0
-# while nth<num:
+# while True:
 #     nth=n1+n2
 #     if nth>num:
 #         break
-#     list.append(nth)
 #     n1=n2
 #     n2=nth
+#     list.append(nth)
 # print(list)
+
+def feibonaqi(n):
+    a=b=1
+    for i in range(0,n):
+        yield a
+        a,b=b,a+b
+a=feibonaqi(100000)
 
 import os
 import csv
 with open('data.csv',mode='w') as f:
    m =csv.writer(f)
-   m.writerow(list)
+   m.writerow(a)
 f.close()
 
 filepath=os.path.join(os.getcwd(),'data.csv')
