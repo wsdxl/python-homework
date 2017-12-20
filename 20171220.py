@@ -32,8 +32,7 @@ def feibonaqi(n):
     for i in range(0,n):
         yield a
         a,b=b,a+b
-a=feibonaqi(10)
-
+a=feibonaqi(100)
 import os
 import csv
 with open('data.csv',mode='w') as f:
