@@ -7,7 +7,6 @@ for i in range(0,n):
             lists[i],lists[j]=lists[j],lists[i]
 print(lists)
 
-<<<<<<< HEAD
 
 
 list1 = [1,20,13,16,5,18]
@@ -22,17 +21,3 @@ def bubble_sort(list1):
 
 s=bubble_sort(list1)
 print(s)
-=======
-# lists = [1,20,13,16,5,18]
-# def bubble_sort(lists):
-#     # 冒泡排序
-#     n = len(lists)
-#     for i in range(0, n):
-#         for j in range(i + 1, n):
-#             if lists[i] > lists[j]:
-#                 lists[i], lists[j] = lists[j], lists[i]
-#     return lists
-
-# s=bubble_sort(lists)
-# print(s)
->>>>>>> 46f58a2d2d36bd36a7b2343bb967e352a613a3b3

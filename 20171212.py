@@ -5,7 +5,6 @@
 写一个程序检测输入的数是否是阿姆斯特朗数
 '''
 
-<<<<<<< HEAD
 # 获取用户输入的数字
 num = int(input("请输入一个数字: "))
 
@@ -42,67 +41,6 @@ for num in range(lower, upper + 1):
         print(num)
 
 
-=======
-num = int(input('请输入一个数：'))
-n = len(str(num))
-if num < 1 and num > 1000:
-    print('num不在范围内')
-else:
-    if n == 1:
-        if num == num**1:
-            print('%d是阿姆斯特朗数' % num)
-        else:
-            print('%d不是阿姆斯特朗数' % num)
-    elif n == 2:
-        if num == (num // 10)**2 + (num % 10)**2:
-            print('%d是阿姆斯特朗数' % num)
-        else:
-            print('%d不是阿姆斯特朗数' % num)
-    elif n == 3:
-        beiwei = num // 100
-        shiwei = num // 10 % 10
-        gewei = num % 10
-        print(beiwei, shiwei, gewei, num)
-        if num == beiwei**3 + shiwei**3 + gewei**3:
-            print('%d是阿姆斯特朗数' % num)
-        else:
-            print('%d不是阿姆斯特朗数' % num)
-
-# # 获取用户输入的数字
-# num = int(input("请输入一个数字: "))
-
-# # 初始化变量 sum
-# sum = 0
-# # 指数
-# n = len(str(num))
-
-# # 检测
-# temp = num
-# while temp > 0:
-#    digit = temp % 10
-#    sum += digit ** n
-#    temp //= 10
-
-# # 输出结果
-# if num == sum:
-#    print(num,"是阿姆斯特朗数")
-# else:
-#    print(num,"不是阿姆斯特朗数")
-
-# # 获取指定期间内的阿姆斯特朗数
-# lower = int(input('最小值：'))
-# upper = int(input('最大值：'))
-# for num in range(lower, upper + 1):
-#     sum = 0
-#     n = len(str(num))
-#     temp = num
-#     while temp > 0:
-#         digit = temp % 10
-#         sum+=digit**n
-#         temp//=10
-#     if num==sum:
-#         print(num)
->>>>>>> 46f58a2d2d36bd36a7b2343bb967e352a613a3b3
 
 ###############################################################################################
 
