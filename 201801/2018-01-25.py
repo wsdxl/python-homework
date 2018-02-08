@@ -28,7 +28,7 @@ def suite():
     suite.addTest(MyTest('test_03topic'))
     return suite
 if __name__=='__main__':
-    suite()
+    # suite()
     runner=HTMLReport.TestRunner(
         report_file_name='test',  # 报告文件名，默认“test”
         output_path='report',  # 保存文件夹名，默认“report”
